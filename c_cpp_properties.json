@@ -1,0 +1,37 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/../../prebuilts/clang/host/linux-x86/clang-r416183b1/include/*",
+                "${workspaceFolder}/../../prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/*",
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/arch/arm64/include",
+                "${workspaceFolder}/../../out/target/product/HU_SS3/obj/KERNEL_OBJ/arch/arm64/include/generated",
+                "${workspaceFolder}/../../out/target/product/HU_SS3/obj/KERNEL_OBJ/arch/arm64/include/",
+                "${workspaceFolder}/../../out/target/product/HU_SS3/obj/KERNEL_OBJ/include/generated/",
+                "${workspaceFolder}/../../out/target/product/HU_SS3/obj/KERNEL_OBJ/include/"
+            ],
+            "forcedInclude": [
+                "${workspaceFolder}/../../out/target/product/HU_SS3/obj/KERNEL_OBJ/include/generated/autoconf.h",
+                "${workspaceFolder}/include/linux/moduleparam.h",
+                "${workspaceFolder}/include/linux/module.h",
+                // "${workspaceFolder}/include/linux/kconfig.h",
+                // "${workspaceFolder}/include/linux/compiler_types.h",
+                // "${workspaceFolder}/include/linux/module.h",
+                // "${workspaceFolder}/../../prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include/stdint.h"
+            ],
+            "defines": [
+                "__GNUC__",
+                "__KERNEL__"
+            ],
+            "cStandard": "gnu89",
+            "intelliSenseMode": "linux-clang-arm64",
+            "compileCommands": "${workspaceFolder}/compile_commands.json",
+            "compilerPath": "${workspaceFolder}/../../prebuilts/clang/host/linux-x86/clang-r416183b1/bin/clang",
+            "configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+    "version": 4
+}
