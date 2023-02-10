@@ -34,7 +34,10 @@ def print_progress_bar(progress):
 
 
 def parse_cmd_file(android_root, docker_android_root, output_dir, cmdfile_path):
-    docker_dir_replace = os.path.abspath(docker_android_root) + "/"
+    if docker_android_root:
+        docker_dir_replace = os.path.abspath(docker_android_root) + "/"
+    else:
+        docker_dir_replace = os.path.abspath(android_root) + "/"
     with open(cmdfile_path, 'r') as cmdfile:
         cmdfile_content = cmdfile.read()
 
